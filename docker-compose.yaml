@@ -1,0 +1,9 @@
+---
+version: '3.9'
+services:
+  develop:
+    image: golang
+    command: ["tail", "-f", "/dev/null"]
+    volumes:
+      - "./:/root/6.5840"
+    working_dir: /root/6.5840
